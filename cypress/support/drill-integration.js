@@ -38,5 +38,21 @@ beforeEach(function() {
 });
 
 function getTestName(currentTest) {
-  return `${currentTest.parent.title} / ${currentTest.title}`
+  const nestedTestSeparator = ' / ';
+  const parentName = getParentNameChain(currentTest)
+    .filter(x => x)
+    .reverse()
+    .join(nestedTestSeparator);
+  return `${parentName}${nestedTestSeparator}${currentTest.title}`
+}
+
+function getParentNameChain(currentTest) {
+  const res = [];
+  let ptr = currentTest.parent;
+  res.push(ptr.title);
+  while (ptr.parent) {
+    ptr = ptr.parent;
+    res.push(ptr.title)
+  }
+  return res;
 }

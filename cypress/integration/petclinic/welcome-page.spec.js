@@ -1,10 +1,12 @@
 context('Welcome page', () => {
-  beforeEach(() => {
-    cy.visit('/');
-  });
+  context('nested test', () => {
+    beforeEach(() => {
+      cy.visit('/');
+    });
 
-  it('check page heading', () => {
-    cy.get('h2').contains('Welcome');
-  });
+    it('check page heading', () => {
+      cy.get('h2').contains('Welcome');
+    });
 
+  });
 });

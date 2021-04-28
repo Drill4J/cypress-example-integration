@@ -1,10 +1,14 @@
 context('Veterinarians page', () => {
-  beforeEach(() => {
-    cy.visit('/vets.html');
-  });
+  context('deep', () => {
+    context('nested test', () => {
+      beforeEach(() => {
+        cy.visit('/vets.html');
+      });
 
-  it('check page heading', () => {
-    cy.get('h2').contains('Veterinarians');
-  });
+      it('check page heading', () => {
+        cy.get('h2').contains('Veterinarians');
+      });
 
+    });
+  });
 });
