@@ -66,4 +66,8 @@ All Drill4J intergration code is placed in `cypress/support/drill-integration.js
 
 5. Run Cypress and launch tests
 
+  ```
+  ./node_modules/.bin/cypress open
+  ```
+
 6. Check Drill4J Admin Panel at [localhost:8091](http://localhost:8091) to see coverage
