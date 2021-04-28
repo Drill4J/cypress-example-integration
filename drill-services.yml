@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  drill-admin:
+    image: drill4j/admin:${BACK_VERSION}
+    environment:
+      - TEST2CODE_PLUGIN_VERSION=${TEST2CODE_PLUGIN_VERSION}
+      - LOG_LEVEL=INFO
+      - JAVA_TOOL_OPTIONS=${JAVA_OPTS}
+      - DRILL_DEFAULT_PACKAGES=${DRILL_DEFAULT_PACKAGES}
+      - DRILL_AGENTS_SOCKET_TIMEOUT=${DRILL_AGENTS_SOCKET_TIMEOUT}
+    ports:
+      - 8090:8090
+    networks:
+      - drill4j-dev-network
+
+  admin-ui:
+    image: drill4j/admin-ui:${FRONT_VERSION}
+    ports:
+      - 8091:8080
+    networks:
+      - drill4j-dev-network
+
+networks:
+  drill4j-dev-network:
