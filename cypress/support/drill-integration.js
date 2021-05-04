@@ -1,6 +1,6 @@
 import createDrillAutoTestAgent from '@drill4j/js-auto-test-agent';
 
-const DRILL_AGENT_ID = 'ScalaSpring';
+const DRILL_AGENT_ID = 'ScalaExampleAgent';
 const DRILL_ADMIN_URL = 'http://localhost:8090';
 
 const DRILL_HEADERS = {
