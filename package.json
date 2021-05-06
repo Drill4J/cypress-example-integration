@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@drill4j/js-auto-test-agent": "0.0.5-beta.2",
+    "@drill4j/js-auto-test-agent": "0.0.6-duration.0",
     "cypress": "^7.2.0"
   }
 }
