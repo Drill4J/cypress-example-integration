@@ -1,0 +1,12 @@
+{
+  "initial": {
+    "name": "Hillside Inn",
+    "address": "MiddleEarth, Shire, 15 Bagging St",
+    "zip": "000000"
+  },
+  "new": {
+    "name": "WatchTower Park",
+    "address": "Mordor, Nurn, 10 Dark Ave",
+    "zip": "999999"
+  }
+}

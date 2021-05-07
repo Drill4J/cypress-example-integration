@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import './cleanup'
 import './drill-integration'
 
 // Alternatively you can use CommonJS syntax:
